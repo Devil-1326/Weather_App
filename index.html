@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ATMOS | Weather Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar">
+
+            <a href="#" class="logo">ATMOS<span>.</span></a>
+
+            <p>WEATHER INTELLIGENCE</p>
+
+        </nav>
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <section class="weather-section">
+
+            <!-- HEADING -->
+            <div class="heading">
+
+                <p class="tagline">YOUR WORLD, AT A GLANCE</p>
+
+                <h1>Weather <span>Dashboard</span></h1>
+
+                <p>Stay ahead of the weather, wherever you go.</p>
+
+            </div>
+
+
+            <!-- SEARCH BAR -->
+            <div class="search-container">
+
+                <input
+                    type="text"
+                    id="cityInput"
+                    placeholder="Enter city name..."
+                    autocomplete="off"
+                >
+
+                <button id="searchBtn">Search</button>
+
+            </div>
+            <p class="error-message" id="errorMessage"></p>
+
+
+            <!-- CURRENT WEATHER -->
+            <section class="current-weather" id="currentWeather">
+
+                <div class="weather-location">
+
+                    <div>
+                        <p class="label">CURRENT LOCATION</p>
+                        <h2 id="cityName">Search for a city</h2>
+                        <p id="weatherDescription">Weather information will appear here</p>
+                    </div>
+
+                    <div class="weather-icon" id="weatherIcon">
+                        🌤️
+                    </div>
+
+                </div>
+
+
+                <div class="temperature-container">
+
+                    <h2 id="temperature">--°C</h2>
+
+                    <p>Feels like <span id="feelsLike">--°C</span></p>
+
+                </div>
+
+
+                <div class="weather-details">
+
+                    <div class="detail-card">
+                        <span>💧</span>
+                        <p>Humidity</p>
+                        <h3 id="humidity">--%</h3>
+                    </div>
+
+                    <div class="detail-card">
+                        <span>💨</span>
+                        <p>Wind Speed</p>
+                        <h3 id="windSpeed">-- km/h</h3>
+                    </div>
+
+                    <div class="detail-card">
+                        <span>🌡️</span>
+                        <p>Feels Like</p>
+                        <h3 id="feelsLikeDetail">--°C</h3>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- FORECAST -->
+            <section class="forecast-section">
+
+                <div class="section-heading">
+
+                    <h2>5-Day Forecast</h2>
+
+                    <p>UPCOMING WEATHER</p>
+
+                </div>
+
+                <div class="forecast-container" id="forecastContainer">
+
+                    <p class="forecast-placeholder">
+                        Search for a city to view its forecast.
+                    </p>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>© 2026 ATMOS Weather Dashboard. All rights reserved.</p>
+
+    </footer>
+
+</body>
+
+</html>
